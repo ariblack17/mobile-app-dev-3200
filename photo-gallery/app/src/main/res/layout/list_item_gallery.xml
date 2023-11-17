@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout for list items -->
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/item_image_view"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"
+
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+
+
+    />
+
+    <!-- added code below after line 11 to add space between elements -->
+
+    <!--
+        android:layout_width="match_parent
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+    -->
+
+

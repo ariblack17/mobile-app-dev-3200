@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- formats crime detail screen -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="16dp"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/crime_title_label"
+    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+<EditText
+    android:id="@+id/crime_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/crime_title_hint"
+    android:importantForAutofill="no"
+    android:inputType="text" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/crime_details_label"
+    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+<Button
+    android:id="@+id/crime_date"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:text="Wed May 11 11:56 EST 2022" />
+
+    <!-- FIX START: created constraint layout for solved box and cancel button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- new button added -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/crime_solved"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/crime_solved_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
